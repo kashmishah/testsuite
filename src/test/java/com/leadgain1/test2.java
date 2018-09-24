@@ -20,16 +20,16 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
 
-
-
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes =ForgetPassword.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes =test2.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestPropertySource(value="classpath:application.properties")
 @Configuration
 @ComponentScan
 @EnableAutoConfiguration
-public class ForgetPassword {
 
+public class test2 {
+
+	
 	@Autowired
     private WebDriver webDriver;
 	
@@ -38,16 +38,17 @@ public class ForgetPassword {
 	 
 	 @Test
 	 
-	 public void leadGainForget() throws AWTException, InterruptedException, IOException {
+	 public void testNew() throws AWTException, InterruptedException, IOException {
 		
 		 assertTrue(true);
 	 } 
 	 
 @Test
 	 
-	 public void leadGainLogin() throws AWTException, InterruptedException, IOException {
-	assertTrue(false);
+	 public void testOld() throws AWTException, InterruptedException, IOException {
+	 assertTrue(true);
 	 } 
 	 
-	 
+	
+	
 }

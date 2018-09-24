@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.leadgain1.ForgetPassword"/>
-      <class name="com.leadgain.ExitIntentSeleniumTest"/>
-    </classes>
-  </test> <!-- Test -->
+<suite thread-count="3" name="Suite" parallel="tests">
+    <suite-files>
+        <suite-file path="C:\Users\kashmi\Documents\workspace\LITesting\LITesting\src\test\resources\suitea.xml" />
+        <suite-file path="C:\Users\kashmi\Documents\workspace\LITesting\LITesting\src\test\resources\suiteb.xml" />
+    </suite-files>
 </suite> <!-- Suite -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
